@@ -14,9 +14,6 @@ __pycache__/
 .venv/
 venv/
 
-# Datasets (large, not suitable for git)
-data/
-
 # Office lock/temp files
 .~*
 ~$*
