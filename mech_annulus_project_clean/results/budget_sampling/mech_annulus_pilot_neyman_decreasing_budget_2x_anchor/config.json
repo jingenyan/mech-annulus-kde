@@ -1,0 +1,106 @@
+{
+  "datasets": [
+    "isolet",
+    "cifar10",
+    "cifar10_gist512",
+    "amazon"
+  ],
+  "annulus_counts": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20
+  ],
+  "schedule_base": 1000,
+  "allocation_mode": "pilot_neyman_total_budget",
+  "common_parameters": {
+    "L": 12,
+    "K": 5,
+    "radius_percentile": 70,
+    "bandwidth_factor": 0.25,
+    "hamming_probe": 2,
+    "min_collisions": 2
+  },
+  "norm_percentile": 25,
+  "delta_divisions": 12,
+  "dataset_meta": [
+    {
+      "dataset": "isolet",
+      "split": {
+        "n_train": 2800,
+        "n_index": 1800,
+        "n_queries": 40
+      },
+      "base_radius": 14.00190486907959,
+      "query_radius": 16.506187152862548,
+      "norm_percentile": 25,
+      "delta_divisions": 12,
+      "norm_quantile": 45.77742099761963,
+      "delta": 3.8147850831349692,
+      "delta_factor_equiv": 0.27244757901185,
+      "bandwidth_base": 13.44519591331482,
+      "allocation_mode": "pilot_neyman_total_budget",
+      "schedule_base": 1000
+    },
+    {
+      "dataset": "cifar10",
+      "split": {
+        "n_train": 2800,
+        "n_index": 1800,
+        "n_queries": 40
+      },
+      "base_radius": 32.929407787323,
+      "query_radius": 40.74413890838623,
+      "norm_percentile": 25,
+      "delta_divisions": 12,
+      "norm_quantile": 101.21148109436035,
+      "delta": 8.434290091196695,
+      "delta_factor_equiv": 0.2561324560001254,
+      "bandwidth_base": 31.054956912994385,
+      "allocation_mode": "pilot_neyman_total_budget",
+      "schedule_base": 1000
+    },
+    {
+      "dataset": "cifar10_gist512",
+      "split": {
+        "n_train": 2800,
+        "n_index": 1800,
+        "n_queries": 40
+      },
+      "base_radius": 6.7071746468544005,
+      "query_radius": 7.4883445501327515,
+      "norm_percentile": 25,
+      "delta_divisions": 12,
+      "norm_quantile": 16.327427864074707,
+      "delta": 1.3606189886728923,
+      "delta_factor_equiv": 0.20286022957684713,
+      "bandwidth_base": 6.453535556793213,
+      "allocation_mode": "pilot_neyman_total_budget",
+      "schedule_base": 1000
+    },
+    {
+      "dataset": "amazon",
+      "split": {
+        "n_train": 675,
+        "n_index": 785,
+        "n_queries": 40
+      },
+      "base_radius": 28.56812686920166,
+      "query_radius": 30.461905097961424,
+      "norm_percentile": 25,
+      "delta_divisions": 12,
+      "norm_quantile": 32.05632400512695,
+      "delta": 2.6713603337605796,
+      "delta_factor_equiv": 0.0935084174748777,
+      "bandwidth_base": 28.031204223632812,
+      "allocation_mode": "pilot_neyman_total_budget",
+      "schedule_base": 1000
+    }
+  ]
+}

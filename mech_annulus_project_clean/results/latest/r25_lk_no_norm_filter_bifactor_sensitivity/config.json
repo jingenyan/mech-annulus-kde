@@ -1,0 +1,67 @@
+{
+  "datasets": [
+    "isolet",
+    "cifar10",
+    "cifar10_gist512",
+    "amazon"
+  ],
+  "L_values": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "K_values": [
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100
+  ],
+  "L_sensitivity_fixed_K": 50,
+  "K_sensitivity_fixed_L": 20,
+  "recall_target": 0.9,
+  "radius_mode": "query_adaptive_R25",
+  "bandwidth_mode": "h(q)=0.14R25(q)",
+  "norm_filter_rule": "disabled: no norm-table or radial-layer candidate filter",
+  "lookup_rule": "distance-table hash-bucket lookup with per-layer thresholds; union over L tables without intersecting sphere-layer masks or exact norm-table filter",
+  "selection": "recall >= target, then maximize F1, precision, recall, minimize candidate expansion and query time",
+  "metadata": [
+    {
+      "dataset": "isolet",
+      "loaded_existing": true
+    },
+    {
+      "dataset": "cifar10",
+      "loaded_existing": true
+    },
+    {
+      "dataset": "cifar10_gist512",
+      "loaded_existing": true
+    },
+    {
+      "dataset": "amazon",
+      "loaded_existing": true
+    }
+  ]
+}
